@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Using Arrays</title>
+</head>
+<body>
+    <h1 class="text-capitalise">Using Arrays</h1> 
+    <p>How To Declare An Array?<h4 id="array1"></h4></p><hr>
+    <p>How To Fetch The First Element Of AnArray?<h4 id="array2"></h4></p><hr>
+    <p>How To Fetch The First Element Of AnArray?<h4 id="array3"></h4></p><hr>
+    <p>How To Fetch The First Element Of AnArray?<h4 id="array4"></h4></p><hr>
+    <p>How To Get Length Of An Array?<h4 id="array5"></h4></p><hr>
+    <p>How To Loop An Array?<h4 id="array6"></h4></p><hr>
+    <p>How To Add An Element At An End Of An Array?<h4 id="array7"></h4></p><hr>
+    <p>How To Declare An Array With An Alphabet?<h4 id="array8"></h4></p><hr>
+    <p>How To Sort An Array?<h4 id="array9"></h4></p><hr>
+    <p>How To Reverse An Array?<h4 id="array10"></h4></p><hr>
+    <p>How To Declare An Array With ANumber?<h4 id="array11"></h4></p><hr>
+    <p>How To Declare An Array With The Maximum Number?<h4 id="array12"></h4></p><hr>
+    <script>
+        var fruits= ["Raspberry", " Ackiki", " Jackfruit"];
+        console.log(fruits);
+        document.getElementById("array1").innerHTML=fruits;
+        var firstfruit= fruits[0];
+        console.log(firstfruit);
+        document.getElementById("array2").innerHTML=firstfruit;
+        var length=fruits.length;
+        console.log(length);
+        document.getElementById("array5").innerhtml=length;
+        var loop="";
+        for (i=0; i<fruits.length; i++) {
+         console.log(fruits[i]);
+         loop= loop+fruits[i]+"<br>";
+        } 
+    document.getElementById("array6").innerHTML=loop;
+    fruits.push(" Orange");
+    console.log(fruits);
+    document.getElementById("array7").innerHTML=fruits;
+    var alphabet= ["u","q","j","s","d","f","h"]
+    console.log(alphabet);
+    document.getElementById("array8").innerHTML=alphabet;
+    alphabet.sort();
+    console.log(alphabet);
+    document.getElementById("array9").innerHTML=alphabet;
+    var reverse= alphabet.reverse;
+    console.log(reverse);
+    document.getElementById("array10").innerHTML=reverse;
+    var number= ["9","8","2","1","4","7","5"]
+    console.log(number);
+    document.getElementById("array11").innerHTML=number;
+    var maxnumber=Math.max.apply(Math,number);
+    console.log(maxnumber);
+    document.getElementById("array12").innerHTML=maxnumber;
+    </script>
+</body>
+</html>
